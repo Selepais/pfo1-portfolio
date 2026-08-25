@@ -72,7 +72,7 @@ La imagen utilizada en el portafolio es una fotografía personal y no fue genera
 https://github.com/Selepais
 
 **Proyecto publicado en Vercel:**
-
+https://pfo1-portfolio-38ek.vercel.app/
 
 ## 👤 Autora
 
