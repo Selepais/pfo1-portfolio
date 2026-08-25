@@ -1,0 +1,377 @@
+/* Variables de diseño */
+:root {
+    --color-principal: #6c63ff;
+    --color-principal-oscuro: #5149d8;
+    --color-fondo: #f8f9fc;
+    --color-blanco: #ffffff;
+    --color-texto: #252535;
+    --color-texto-suave: #666678;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 5rem 10%;
+}
+
+/* Encabezado y navegación */
+header {
+    background-color: var(--color-blanco);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > a {
+    color: var(--color-principal);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul a {
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+    color: var(--color-principal);
+}
+/* Presentación principal */
+#inicio {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#inicio > div {
+    max-width: 800px;
+}
+
+#inicio > div > p:first-child {
+    color: var(--color-principal);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+#inicio h1 {
+    font-size: clamp(2.8rem, 7vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+#inicio h2 {
+    color: var(--color-texto-suave);
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+#inicio div > p:not(:first-child) {
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    color: var(--color-texto-suave);
+}
+
+/* Botón de GitHub */
+#inicio a {
+    display: inline-block;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 0.9rem 1.7rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#inicio a:hover {
+    background-color: var(--color-principal-oscuro);
+    transform: translateY(-3px);
+}
+/* Sección Sobre mí */
+#sobre-mi {
+    background-color: var(--color-blanco);
+    text-align: center;
+}
+
+#sobre-mi h2,
+#habilidades h2,
+#intereses h2,
+#contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#sobre-mi p {
+    max-width: 750px;
+    margin: 0 auto 1rem;
+    color: var(--color-texto-suave);
+}
+
+
+/* Sección de habilidades */
+#habilidades {
+    text-align: center;
+}
+
+.habilidades-grid {
+    max-width: 1000px;
+    margin: 2.5rem auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.habilidad {
+    background-color: var(--color-blanco);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habilidad:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.habilidad h3 {
+    color: var(--color-principal);
+    margin-bottom: 0.8rem;
+}
+
+.habilidad p {
+    color: var(--color-texto-suave);
+    font-size: 0.95rem;
+}
+/* Sección personal */
+#intereses {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+#intereses p {
+    max-width: 750px;
+    margin: 0 auto 1rem;
+}
+
+
+/* Sección de contacto */
+#contacto {
+    text-align: center;
+}
+
+#contacto > p {
+    color: var(--color-texto-suave);
+    margin-bottom: 2rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: var(--color-blanco);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+form div {
+    margin-bottom: 1.3rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid var(--color-principal);
+    border-color: transparent;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    border: none;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 0.9rem;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-principal-oscuro);
+    transform: translateY(-2px);
+}
+/* Foto de perfil */
+#inicio {
+    gap: 5rem;
+}
+
+.presentacion {
+    max-width: 650px;
+    text-align: left;
+}
+
+.foto-perfil img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--color-blanco);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+/* Animación de entrada de la presentación */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.presentacion {
+    animation: aparecer 0.8s ease-out;
+}
+
+.foto-perfil {
+    animation: aparecer 1s ease-out;
+}
+/* Pie de página */
+footer {
+    background-color: var(--color-texto);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+footer a {
+    color: var(--color-blanco);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--color-principal);
+}
+/* Diseño responsive para tablets y celulares */
+@media (max-width: 768px) {
+
+    section {
+        padding: 4rem 7%;
+    }
+
+    /* Navegación */
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Presentación */
+    #inicio {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        min-height: auto;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .presentacion {
+        text-align: center;
+    }
+
+    .foto-perfil img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Habilidades */
+    .habilidades-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Formulario */
+    form {
+        padding: 1.5rem;
+    }
+}

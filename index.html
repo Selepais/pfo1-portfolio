@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Selene Pais">
+
+    <title>Selene Pais | Portafolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<!-- Encabezado principal y navegación del sitio -->
+<header>
+    <nav aria-label="Navegación principal">
+        <a href="#inicio">Selene Pais</a>
+
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Contenido principal del portafolio -->
+<main>
+
+    <!-- Sección de presentación -->
+<section id="inicio">
+
+    <div class="presentacion">
+        <p>Hola, soy</p>
+
+        <h1>Selene Pais</h1>
+
+        <h2>QA Analyst & estudiante de Desarrollo de Software</h2>
+
+        <p>
+            Me interesa la tecnología, el desarrollo de software y la calidad.
+            Actualmente trabajo en testing de aplicaciones y continúo formándome
+            en desarrollo de software.
+        </p>
+
+        <a href="https://github.com/Selepais"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Visitar el perfil de GitHub de Selene Pais">
+            Ver mi GitHub
+        </a>
+    </div>
+
+    <div class="foto-perfil">
+        <img src="img/perfil.png"
+             alt="Foto de perfil de Selene Pais">
+    </div>
+
+</section>
+<!-- Sección Sobre mí -->
+<section id="sobre-mi">
+    <h2>Sobre mí</h2>
+
+    <p>
+        Soy QA Analyst con experiencia en pruebas funcionales, pruebas de APIs
+        y validación de bases de datos. Me interesa especialmente comprender
+        cómo funcionan los sistemas, detectar posibles problemas y contribuir
+        a mejorar la calidad del software.
+    </p>
+
+    <p>
+        Actualmente trabajo en el análisis de requerimientos, diseño y ejecución
+        de casos de prueba, pruebas funcionales, de integración y regresión.
+        También realizo validaciones de servicios SOAP y REST, consultas sobre
+        bases de datos Oracle mediante SQL y gestión y seguimiento de incidencias
+        utilizando Jira.
+    </p>
+
+    <p>
+        Además, participo en tareas de automatización de pruebas utilizando
+        Selenium, Cucumber y Ruby, e incorporo herramientas de Inteligencia
+        Artificial como apoyo para optimizar el desarrollo, análisis y
+        mantenimiento de automatizaciones.
+    </p>
+
+    <p>
+        Actualmente continúo formándome en Desarrollo de Software y
+        capacitándome en nuevas herramientas y buenas prácticas de testing,
+        con el objetivo de ampliar mis conocimientos técnicos y seguir
+        creciendo profesionalmente dentro del área de tecnología.
+    </p>
+</section>
+
+<!-- Sección de habilidades -->
+<section id="habilidades">
+    <h2>Mis habilidades</h2>
+
+    <div class="habilidades-grid">
+
+        <article class="habilidad">
+            <h3>Testing</h3>
+            <p>Testing funcional, diseño de casos de prueba y reporte de defectos.</p>
+        </article>
+
+        <article class="habilidad">
+            <h3>APIs</h3>
+            <p>Pruebas de servicios REST y SOAP utilizando Postman y SoapUI.</p>
+        </article>
+
+        <article class="habilidad">
+            <h3>SQL</h3>
+            <p>Consultas y validación de datos en bases de datos.</p>
+        </article>
+
+
+
+    </div>
+</section>
+<!-- Sección personal -->
+<section id="intereses">
+    <h2>Más sobre mí</h2>
+
+    <p>
+        Además de mi interés por la tecnología, disfruto seguir aprendiendo
+        y enfrentar nuevos desafíos que me permitan crecer tanto profesional
+        como personalmente.
+    </p>
+
+    <p>
+        En mi tiempo libre disfruto hacer deporte, viajar y aprender idiomas.
+    </p>
+</section>
+<!-- Sección de contacto -->
+<section id="contacto">
+    <h2>Contacto</h2>
+
+    <p>
+        Si querés contactarme, podés completar el siguiente formulario.
+    </p>
+
+    <form>
+        <div>
+            <label for="nombre">Nombre</label>
+            <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                placeholder="Tu nombre"
+                required
+            >
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="tu@email.com"
+                required
+            >
+        </div>
+
+        <div>
+            <label for="mensaje">Mensaje</label>
+            <textarea 
+                id="mensaje" 
+                name="mensaje" 
+                rows="5" 
+                placeholder="Escribí tu mensaje"
+                required
+            ></textarea>
+        </div>
+
+        <button type="submit">Enviar mensaje</button>
+    </form>
+</section>
+</main>
+<!-- Pie de página -->
+<footer>
+    <p>© 2026 Selene Pais</p>
+
+    <p>
+        <a href="https://github.com/Selepais"
+           target="_blank"
+           rel="noopener noreferrer">
+            GitHub
+        </a>
+    </p>
+</footer>
+
+</body>
+
+</html>
